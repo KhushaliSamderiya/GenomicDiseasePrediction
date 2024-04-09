@@ -1,3 +1,4 @@
+
 # Genomic Disease Prediction Project
 
 ## Overview
@@ -23,9 +24,50 @@ This project focuses on predicting the likelihood of specific diseases based on 
 ### Setup Instructions
 Follow these steps to set up your local environment:
 
-```bash
+\```bash
 git clone https://github.com/yourusername/genomic-disease-prediction.git
 cd genomic-disease-prediction
 python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 pip install -r requirements.txt
+\```
+
+## Usage
+The `main.py` script serves as the entry point for running the various components of this project, including data preprocessing, model training, and predictions. Use the following commands to interact with the project from the command line:
+
+### Preprocessing Genomic Data
+To preprocess your genomic data, run:
+\```bash
+python main.py --preprocess --data path/to/your/genomic_data.csv
+\```
+
+### Training the Disease Prediction Model
+To train the disease prediction model with your preprocessed data, use:
+\```bash
+python main.py --train --data path/to/your/preprocessed_data.csv
+\```
+
+### Making Predictions
+Once the model is trained, you can make predictions on new genomic data:
+\```bash
+python main.py --predict --data path/to/your/new_genomic_data.csv --model path/to/your/trained_model.h5
+\```
+
+For more detailed information on the command-line arguments and options, refer to the documentation provided in the `main.py` script.
+
+## Contributing
+We welcome contributions from the community. If you're interested in contributing, please take a look at our contribution guidelines and open a pull request.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+## Acknowledgements
+Special thanks to the following:
+- Data sources: 1000 Genomes Project, ClinVar, and other public genomic databases.
+- Open-source projects and libraries such as BioPython, Keras, TensorFlow, and scikit-learn that made this project possible.
+- All the contributors who have invested their time in improving this project.
+
+## Contact
+For any questions or suggestions, feel free to reach out to the project maintainer:
+- Project Maintainer: [Khushali Samderiya](ksamderi@uccs.edu)
+
